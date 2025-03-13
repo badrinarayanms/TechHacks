@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 157, 100%, 50%;
+  --primary-foreground: 10, 67%, 10%;
+
+  --secondary: 240, 60%, 10%;
+  --secondary-foreground: 0, 0%, 98%;
+
+  --accent: 300, 100%, 50%;
+  --accent-foreground: 0, 0%, 98%;
+
+  --background: 240, 67%, 8%;
+  --foreground: 240, 10%, 94%;
+
+  --card: 240, 67%, 8%;
+  --card-foreground: 240, 10%, 94%;
+
+  --popover: 240, 67%, 8%;
+  --popover-foreground: 240, 10%, 94%;
+
+  --muted: 240, 60%, 15%;
+  --muted-foreground: 240, 5%, 65%;
+
+  --border: 240, 60%, 15%;
+  --input: 240, 60%, 15%;
+
+  --ring: 157, 100%, 50%;
+
+  --radius: 0.5rem;
+}
+
+body {
+  background-color: #070720;
+  color: #e0e0ff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font-mono {
+  font-family: "Courier New", monospace;
+}
+
+.bg-dark-bg {
+  background-color: #070720;
+}
+
+.text-light-text {
+  color: #e0e0ff;
+}
+
+.text-primary {
+  color: #00ffaa;
+}
+
+.text-accent {
+  color: #ff00ff;
+}
+
+.bg-primary {
+  background-color: #00ffaa;
+}
+
+.bg-secondary {
+  background-color: #0a0a2a;
+}
+
+.bg-accent {
+  background-color: #ff00ff;
+}
+
+.border-primary {
+  border-color: #00ffaa;
+}
+
+.border-accent {
+  border-color: #ff00ff;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
+
