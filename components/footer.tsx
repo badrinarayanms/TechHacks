@@ -37,14 +37,14 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <a href="mailto:info@techhacks2025.com" className="hover:text-[#3f40a3] transition-colors duration-300">
-                    info@techhacks2025.com
+                  techhacks2k25@gmail.com
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="tel:+1234567890" className="hover:text-[#3f40a3] transition-colors duration-300">
-                    +1 (234) 567-890
+                    +91 9940935591
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
