@@ -51,31 +51,31 @@ body {
 }
 
 .text-primary {
-  color: #00ffaa;
+  color: #3f40a3;
 }
 
 .text-accent {
-  color: #ff00ff;
+  color: #3f40a3;
 }
 
 .bg-primary {
-  background-color: #00ffaa;
+  background-color: #5153bf;
 }
 
 .bg-secondary {
-  background-color: #0a0a2a;
+  background-color: #13287E;
 }
 
 .bg-accent {
-  background-color: #ff00ff;
+  background-color: #3f40a3;
 }
 
 .border-primary {
-  border-color: #00ffaa;
+  border-color: #3f40a3;
 }
 
 .border-accent {
-  border-color: #ff00ff;
+  border-color: #3f40a3;
 }
 
 @keyframes blink {

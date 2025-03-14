@@ -7,17 +7,30 @@ import Prizes from "@/components/prizes"
 import Sponsors from "@/components/sponsors"
 import Faq from "@/components/faq"
 import Footer from "@/components/footer"
+import LetterGlitch from "@/components/ui/LetterGlitch"
+import Cybertracs from "@/components/Cybertracs"
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-dark-bg text-light-text">
       <Header />
-      <Hero />
+      <div className="w-full h-full mb-[1000px]">
+      <div className="absolute w-full h-full opacity-30 "><LetterGlitch
+        glitchSpeed={50}
+        centerVignette={true}
+        outerVignette={false}
+        smooth={true}
+        glitchColors={['#053bff', '#06deff', '#0fafff']}
+      /></div>
+      <div className="absolute w-full "><Hero /></div>
+      </div>
+      
       <About />
       <Themes />
       <Timeline />
       <Prizes />
-      <Sponsors />
+      <Cybertracs/>
+      {/* <Sponsors /> */}
       <Faq />
       <Footer />
     </main>

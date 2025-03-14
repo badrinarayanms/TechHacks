@@ -1,4 +1,4 @@
-import { Brain, Link, Cloud, BotIcon as Robot, Globe, Heart } from "lucide-react"
+import { Brain, Link, Cloud, BotIcon as Robot, Globe, Heart, ShieldCheck, Lightbulb } from "lucide-react"
 
 export default function Themes() {
   const themes = [
@@ -9,15 +9,10 @@ export default function Themes() {
         "Develop AI-powered solutions that solve real-world problems and push the boundaries of machine learning.",
     },
     {
-      title: "Blockchain",
-      icon: <Link className="h-10 w-10" />,
+      title: "Cybersecurity",
+      icon: <ShieldCheck  className="h-10 w-10" />,
       description:
-        "Create decentralized applications that leverage blockchain technology for transparency and security.",
-    },
-    {
-      title: "Cloud Computing",
-      icon: <Cloud className="h-10 w-10" />,
-      description: "Build scalable cloud-based solutions that handle big data and provide efficient services.",
+        "Secure the Future – Build robust cybersecurity solutions to protect digital assets and ensure privacy.",
     },
     {
       title: "IoT & Robotics",
@@ -25,14 +20,14 @@ export default function Themes() {
       description: "Connect the physical and digital worlds through innovative IoT and robotics applications.",
     },
     {
-      title: "Sustainability",
+      title: "Sustainable Development",
       icon: <Globe className="h-10 w-10" />,
       description: "Develop tech solutions that address environmental challenges and promote sustainable practices.",
     },
     {
-      title: "Healthcare",
-      icon: <Heart className="h-10 w-10" />,
-      description: "Create applications that improve healthcare delivery, patient outcomes, and medical research.",
+      title: "Open Innovation",
+      icon:  <Lightbulb  className="h-10 w-10" />,
+      description: "Innovate Without Limits – Create groundbreaking solutions with open collaboration and creativity.",
     },
   ]
 
@@ -50,12 +45,12 @@ export default function Themes() {
           {themes.map((theme, index) => (
             <div
               key={index}
-              className="bg-secondary/20 rounded-xl p-8 hover:bg-secondary/30 transition-all duration-300 border border-transparent hover:border-accent/30 group"
+              className="bg-secondary/20 rounded-xl p-8 hover:bg-secondary/30 transition-all duration-300 border border-transparent hover:border-accent/30 group relative"
             >
               <div className="text-accent mb-4 transform group-hover:scale-110 transition-transform duration-300">
-                {theme.icon}
+              {theme.icon}
               </div>
-              <h3 className="text-xl font-bold mb-3 text-primary">{theme.title}</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">{theme.title}</h3>
               <p>{theme.description}</p>
             </div>
           ))}

@@ -1,8 +1,14 @@
 "use client"
 
 import { useEffect, useState, useRef } from "react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import srmlogo from "@/public/srmlogo.webp"
+import texuslogo from "@/public/texuslogo.png"
+import cybertracslogo from '@/public/cybertracslogo.png'
+import LetterGlitch from "./ui/LetterGlitch"
+
 
 export default function Hero() {
   const [typedText, setTypedText] = useState("")
@@ -45,7 +51,13 @@ export default function Hero() {
 
     return () => clearTimeout(timeoutId)
   }, [])
-
+  const handleNavClick = (id: string) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+       
+    }
+  }
   // Binary animation effect
   useEffect(() => {
     const createBinaryElements = () => {
@@ -73,20 +85,44 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      
       <div
         className="absolute inset-0 bg-gradient-to-br from-secondary via-dark-bg to-secondary z-0"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 20% 30%, rgba(0, 255, 170, 0.15) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(255, 0, 255, 0.15) 0%, transparent 40%)",
+            "radial-gradient(circle at 20% 30%, rgba(63, 172, 255, 0.15) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(68, 128, 224, 0.15) 0%, transparent 40%)",
         }}
         ref={binaryRef}
       ></div>
-
+  
       <div className="container mx-auto px-4 py-20 z-10 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
+        <div className="flex w-full text-center justify-center items-center mb-2 ">
+            <Image src={srmlogo} alt="Logo 1" width={100} className="mr-5"/>
+            <span className="text-lg text-white font-bold ">Department of Information Technology</span>
+            <Image src={texuslogo} alt="Logo 1" width={100} className="ml-5" />
+            </div>
+            <h1 className="text-lg text-white font-bold mb-1">In Association with</h1>
+          <div className="flex justify-center mb-8">
+            
+            
+            <div className="bg-white rounded-full px-5 py-2">
+            <a
+               
+              href={`#cybertracs`}
+              className="text-light-text hover:text-[#3f40a3] transition-colors duration-300"
+              onClick={() => handleNavClick("cybertracs")}
+            >
+              <Image src={cybertracslogo} alt="SRM Logo" width={150}  />
+               
+            </a>
+            
+
+            </div>
+          </div>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold  md:mb-4">
             TechHacks Hackathon{" "}
-            <span className="inline-block bg-accent text-dark-bg text-sm md:text-base px-2 py-1 rounded-md align-top ml-2">
+            <span className="inline-block  bg-accent text-dark-bg text-sm mt-2 md:mt-0 md:text-base px-2 py-1 rounded-md align-top ml-2">
               2025
             </span>
           </h1>
@@ -101,14 +137,16 @@ export default function Hero() {
             tech enthusiasts from around the globe.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/80 text-secondary font-bold">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <Button size="lg" className="bg-primary hover:bg-seconday/80 hover:text-white text-secondary font-bold">
               Register Now
             </Button>
             <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10">
               Learn More <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-          </div>
+            </div>
+            
+
         </div>
       </div>
     </section>

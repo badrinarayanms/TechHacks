@@ -11,23 +11,14 @@ export default function Faq() {
         "TechHacks is open to undergraduate and postgraduate students, professionals, and anyone passionate about technology. You must be at least 18 years old to participate.",
     },
     {
-      question: "Do I need to have a team to register?",
-      answer:
-        "No, you can register as an individual and form a team later. We'll have team formation events before the hackathon where you can meet potential teammates. Teams can have up to 4 members.",
-    },
-    {
       question: "Is there a registration fee?",
-      answer: "No, TechHacks is completely free to participate in, thanks to our generous sponsors.",
+      answer:
+        "Yes, there is a registration fee. The cost is 300 per team.",
     },
     {
       question: "What should I bring to the hackathon?",
       answer:
         "You should bring your laptop, charger, any hardware you plan to use for your project, and your student ID if you're a student. If you're participating virtually, ensure you have a stable internet connection.",
-    },
-    {
-      question: "Will there be food and accommodation?",
-      answer:
-        "Yes, meals will be provided throughout the hackathon for in-person participants. However, accommodation is not provided, and participants are responsible for their own lodging arrangements.",
     },
     {
       question: "Can I work on a pre-existing project?",
@@ -44,7 +35,8 @@ export default function Faq() {
       answer:
         "Yes, all participants must adhere to our code of conduct, which promotes a respectful, inclusive, and collaborative environment. Any violation may result in disqualification.",
     },
-  ]
+  ];
+  
 
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 

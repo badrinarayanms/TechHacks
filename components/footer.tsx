@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-secondary py-12 border-t border-primary/20">
+    <footer className=" py-12 border-t border-primary/20">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div>
@@ -24,7 +24,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 {["About", "Themes", "Timeline", "Prizes", "Sponsors", "FAQ"].map((item) => (
                   <li key={item}>
-                    <Link href={`#${item.toLowerCase()}`} className="hover:text-primary transition-colors duration-300">
+                    <Link href={`#${item.toLowerCase()}`} className="text-white hover:text-[#3f40a3] transition-colors duration-300">
                       {item}
                     </Link>
                   </li>
@@ -36,12 +36,12 @@ export default function Footer() {
               <h3 className="text-lg font-semibold mb-4 text-primary">Contact</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="mailto:info@techhacks2025.com" className="hover:text-primary transition-colors duration-300">
+                  <a href="mailto:info@techhacks2025.com" className="hover:text-[#3f40a3] transition-colors duration-300">
                     info@techhacks2025.com
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+1234567890" className="hover:text-primary transition-colors duration-300">
+                  <a href="tel:+1234567890" className="hover:text-[#3f40a3] transition-colors duration-300">
                     +1 (234) 567-890
                   </a>
                 </li>
@@ -54,23 +54,23 @@ export default function Footer() {
           <p className="text-sm text-light-text/70 mb-4 md:mb-0">© {currentYear} TechHacks. All rights reserved.</p>
 
           <div className="flex space-x-4">
-            <Link href="#" className="text-light-text/70 hover:text-primary transition-colors duration-300">
+            <Link href="#" className="text-light-text/70 hover:text-[#3f40a3] transition-colors duration-300">
               <Twitter className="h-5 w-5" />
               <span className="sr-only">Twitter</span>
             </Link>
-            <Link href="#" className="text-light-text/70 hover:text-primary transition-colors duration-300">
+            <Link href="#" className="text-light-text/70 hover:text-[#3f40a3] transition-colors duration-300">
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
             </Link>
-            <Link href="#" className="text-light-text/70 hover:text-primary transition-colors duration-300">
+            <Link href="#" className="text-light-text/70 hover:text-[#3f40a3] transition-colors duration-300">
               <Instagram className="h-5 w-5" />
               <span className="sr-only">Instagram</span>
             </Link>
-            <Link href="#" className="text-light-text/70 hover:text-primary transition-colors duration-300">
+            <Link href="#" className="text-light-text/70 hover:text-[#3f40a3] transition-colors duration-300">
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </Link>
-            <Link href="#" className="text-light-text/70 hover:text-primary transition-colors duration-300">
+            <Link href="#" className="text-light-text/70 hover:text-[#3f40a3] transition-colors duration-300">
               <Facebook className="h-5 w-5" />
               <span className="sr-only">Facebook</span>
             </Link>

@@ -45,7 +45,7 @@ export default function About() {
           {aboutCards.map((card, index) => (
             <div
               key={index}
-              className="bg-dark-bg border border-primary/20 rounded-xl p-6 hover:border-primary transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,255,170,0.3)]"
+              className="bg-dark-bg border border-white rounded-xl p-6 hover:border-[#3f40a3] transition-all duration-300 hover:shadow-[0_0_15px_rgba(0, 128, 255, 0.724)]"
             >
               <h3 className="text-xl md:text-2xl font-bold mb-4 text-primary">{card.title}</h3>
               <p className="mb-6">{card.description}</p>
