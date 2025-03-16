@@ -77,7 +77,7 @@ export default function Timeline() {
     key={index}
     className={`relative mb-12 ${
       index % 2 === 0 ? "md:ml-auto md:pl-16 md:pr-0" : "md:mr-auto md:pr-16 md:pl-0"
-    } md:w-1/2 pl-10`}
+    } md:w-1/2  pl-0 md:pl-10`}
   >
     {/* Timeline dot */}
     <div className="absolute left-1/2 md:left-auto md:right-auto transform -translate-x-1/2 md:translate-x-0 -translate-y-1/2 top-6 w-5 h-5 rounded-full bg-accent z-10"></div>

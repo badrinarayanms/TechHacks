@@ -97,9 +97,9 @@ export default function Hero() {
   
       <div className="container mx-auto px-4 py-20 z-10 text-center">
         <div className="max-w-4xl mx-auto">
-        <div className="flex w-full text-center justify-center items-center mb-2 ">
+        <div className="flex w-full text-center justify-center items-center mb-2 md:px-10 ">
             <Image src={srmlogo} alt="Logo 1" width={100} className="mr-5"/>
-            <span className="text-lg text-white font-bold ">Department of Information Technology</span>
+            <span className="text-[0.8rem] w-full md:text-lg text-white font-bold ">Department of Information Technology</span>
             <Image src={texuslogo} alt="Logo 1" width={100} className="ml-5" />
             </div>
             <h1 className="text-lg text-white font-bold mb-1">In Association with</h1>

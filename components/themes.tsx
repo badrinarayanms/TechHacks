@@ -45,7 +45,7 @@ export default function Themes() {
           {themes.map((theme, index) => (
             <div
               key={index}
-              className="bg-secondary/20 rounded-xl p-8 hover:bg-secondary/30 transition-all duration-300 border border-transparent hover:border-accent/30 group relative"
+              className="bg-secondary/20 rounded-xl p-8 hover:bg-secondary/30 transition-all duration-300 border lg:border-transparent hover:border-accent/30 group relative"
             >
               <div className="text-accent mb-4 transform group-hover:scale-110 transition-transform duration-300">
               {theme.icon}
