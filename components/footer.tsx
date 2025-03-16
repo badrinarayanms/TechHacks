@@ -36,7 +36,7 @@ export default function Footer() {
               <h3 className="text-lg font-semibold mb-4 text-primary">Contact</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="mailto:info@techhacks2025.com" className="hover:text-[#3f40a3] transition-colors duration-300">
+                  <a href="mailto:techhacks2k25@gmail.com" className="hover:text-[#3f40a3] transition-colors duration-300">
                   techhacks2k25@gmail.com
                   </a>
                 </li>
@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-primary/10">
+        {/* <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-primary/10">
           <p className="text-sm text-light-text/70 mb-4 md:mb-0">© {currentYear} TechHacks. All rights reserved.</p>
 
           <div className="flex space-x-4">
@@ -75,7 +75,7 @@ export default function Footer() {
               <span className="sr-only">Facebook</span>
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   )
