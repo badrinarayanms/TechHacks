@@ -138,10 +138,14 @@ export default function Hero() {
           </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button size="lg" className="bg-primary hover:bg-seconday/80 hover:text-white text-secondary font-bold">
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-secondary/80 hover:border hover:border-[#5153bf] hover:text-white text-secondary font-bold"
+              onClick={() => window.location.href = "https://texus.io/event/2578"}
+            >
               Register Now
             </Button>
-            <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10">
+            <Button onClick={() => window.location.href = "https://texus.io/event/2578"} variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10">
               Learn More <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             </div>
