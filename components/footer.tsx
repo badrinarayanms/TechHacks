@@ -36,7 +36,7 @@ export default function Footer() {
               <h3 className="text-lg font-semibold mb-4 text-primary">Contact</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="mailto:techhacks2k25@gmail.com" className="hover:text-[#3f40a3] transition-colors duration-300">
+                  <a href="mailto:techhacks2k25@gmail.com" className="hover:text-[#3f40a3] text-[0.7rem] md:text-sm transition-colors duration-300">
                   techhacks2k25@gmail.com
                   </a>
                 </li>

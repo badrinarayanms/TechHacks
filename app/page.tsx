@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-dark-bg text-light-text">
       <Header />
-      <div className="w-full h-full mb-[1000px]">
+      <div className="w-full h-screen   ">
       <div className="absolute w-full h-full opacity-30 "><LetterGlitch
         glitchSpeed={50}
         centerVignette={true}
