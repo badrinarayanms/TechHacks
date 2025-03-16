@@ -28,7 +28,7 @@ export default function Home() {
       <About />
       <Themes />
       <Timeline />
-      <Prizes />
+      {/* <Prizes /> */}
       <Cybertracs/>
       {/* <Sponsors /> */}
       <Faq />
